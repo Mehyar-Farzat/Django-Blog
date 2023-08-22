@@ -10,6 +10,8 @@ class post(models.Model):
     content = models.TextField(max_length=10000)
     publish_date = models.DateTimeField()
     tags = TaggableManager()
+    image = models.ImageField(upload_to='posts', null=True)
+    
     
     def __str__(self) -> str:
         return self.title
