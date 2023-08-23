@@ -21,6 +21,7 @@ def add_post(request):
         form = Postform(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            return redirect('/blog/')
 
     else:
         form = Postform()
@@ -35,6 +36,7 @@ def edit_post(request, post_id):
         form = Postform(request.POST, request.FILES,instance=data)
         if form.is_valid():
             form.save()
+            return redirect(f'/blog/{data.id}')
 
     else:
         form = Postform(instance=data)
