@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render , redirect
 from .models import post
 from .forms import Postform
 
@@ -39,3 +39,10 @@ def edit_post(request, post_id):
     else:
         form = Postform(instance=data)
     return render(request, 'edit.html' , {'form' : form})
+
+
+def delete_post(request,post_id):
+    data =  post.objects.get(id=post_id)
+    data.delete()
+    return redirect('/blog/')
+
