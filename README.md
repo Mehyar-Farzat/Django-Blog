@@ -1,4 +1,4 @@
-Django-Blog
+## Django-Blog
 
 Building a sample Blog using Django
 - Add Post
