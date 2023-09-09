@@ -19,7 +19,7 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from posts.views import post_list , post_detail, add_post, edit_post, delete_post
-from posts.views2 import PostList, PostDetail, PostCreate, PostUpdate
+from posts.views2 import PostList, PostDetail, PostCreate, PostUpdate, PostDelete
 
 
 
@@ -29,7 +29,7 @@ urlpatterns = [
     path('blog/add', PostCreate.as_view()),
     path('blog/<int:pk>', PostDetail.as_view()),
     path('blog/<int:pk>/edit', PostUpdate.as_view()),
-    path('blog/<int:post_id>/delete', delete_post),
+    path('blog/<int:pk>/delete', PostDelete.as_view()),
 
 ] 
 
