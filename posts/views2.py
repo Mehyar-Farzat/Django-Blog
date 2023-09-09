@@ -10,4 +10,13 @@ class PostDetail(generic.DetailView):
     model = post
 
 
+class PostCreate(generic.CreateView):
+    model = post
+    fields = '__all__'
+    success_url = '/blog/'
+
+
+
+
+
 
