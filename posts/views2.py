@@ -25,6 +25,8 @@ class PostUpdate(generic.UpdateView):
 class PostDelete(generic.DeleteView):
     model = post
     success_url = '/blog/'
+
+
     
 
     
