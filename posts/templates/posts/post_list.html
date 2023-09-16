@@ -55,7 +55,7 @@
                     {% for post in post_list %}
                         <!-- Post preview-->
                         <div class="post-preview">
-                            <a href="post.html">
+                            <a href="/blog/{{post.id}}">
                                 <h2 class="post-title">{{post.title}}</h2>
                                 
                                <!--<h3 class="post-subtitle">{{post.content}}</h3>-->
@@ -64,7 +64,7 @@
                             <p class="post-meta">
                                 Posted by
                                 <a href="#!">{{post.author}}</a>
-                                
+                                on
                                 {{post.publish_date|date:"F d, o"}}
                             </p>
                         </div>
