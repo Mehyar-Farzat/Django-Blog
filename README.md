@@ -1,6 +1,6 @@
 ## Django-Blog
 
-Building a sample Blog using Django
+Building a sample Blog using Django, html, css - Full CRUD Operations FBV & CBV
 - Add Post
 - Edit Post
 - View all Posts
