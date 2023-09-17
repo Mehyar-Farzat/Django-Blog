@@ -5,5 +5,6 @@ Building a sample Blog using Django
 - Edit Post
 - View all Posts
 - View one Post using post_id
+- Link Bootstrap template with Blog
  
 
