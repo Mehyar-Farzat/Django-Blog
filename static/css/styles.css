@@ -248,6 +248,7 @@ sup {
 a {
   color: var(--bs-link-color);
   text-decoration: none;
+  
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -3083,6 +3084,7 @@ textarea.form-control-lg {
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: 38, 151, 175;
   text-decoration: none;
+  
 }
 .btn-link:focus-visible {
   color: var(--bs-btn-color);
